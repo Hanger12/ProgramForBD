@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laba4.AddPersonController">
+   <children>
+      <VBox layoutX="147.0" layoutY="49.0" prefHeight="409.0" prefWidth="406.0" AnchorPane.bottomAnchor="264.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="494.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="ImagePerson" fitHeight="434.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <VBox layoutX="453.0" layoutY="29.0" prefHeight="698.0" prefWidth="447.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="453.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Информация о сотрудниках">
+               <VBox.margin>
+                  <Insets left="50.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="56.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="Lid" text="IDСотрудника:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="16.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="TextID" promptText="ID">
+                     <HBox.margin>
+                        <Insets left="5.0" top="18.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="Lname" text="Имя:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="16.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="TextName" promptText="Имя">
+                     <HBox.margin>
+                        <Insets left="85.0" top="18.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="Llname" text="Фамилия:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="16.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="TextLName" promptText="Фамилия">
+                     <HBox.margin>
+                        <Insets left="46.0" top="18.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="Lmname" text="Отчество:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="16.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="TextMName" promptText="Отчество">
+                     <HBox.margin>
+                        <Insets left="45.0" top="18.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="Lbirthday" text="Дата Рождения:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="18.0" top="16.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="TextBirtday" promptText="Год-Месяц-День">
+                     <HBox.margin>
+                        <Insets left="8.0" top="18.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="Lp" text="Пол:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="16.0" />
+                     </HBox.margin>
+                  </Label>
+                  <RadioButton fx:id="radioButtonM" mnemonicParsing="false" onAction="#radioButtonClickM" text="М">
+                     <HBox.margin>
+                        <Insets left="90.0" top="23.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="radioButtonW" mnemonicParsing="false" onAction="#radioButtonClickW" text="Ж">
+                     <HBox.margin>
+                        <Insets left="10.0" top="23.0" />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="LidD" text="IDДолжности:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="18.0" top="16.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="TextIDD" promptText="ID">
+                     <HBox.margin>
+                        <Insets left="25.0" top="18.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="LidP" text="IDПодразделения:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="16.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="TextPODR" promptText="ID">
+                     <HBox.margin>
+                        <Insets left="8.0" top="18.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="ButtonEnter" layoutX="14.0" layoutY="451.0" mnemonicParsing="false" onAction="#ButtonEnterClick" prefHeight="126.0" prefWidth="215.0" text="Добавить">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="ButtonCanel" layoutX="234.0" layoutY="451.0" mnemonicParsing="false" onAction="#ButtonCloseClick" prefHeight="126.0" prefWidth="215.0" text="Закрыть">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

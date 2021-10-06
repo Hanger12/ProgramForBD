@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laba4.MainFormController">
+   <children>
+      <TableView fx:id="TableWiew" layoutX="12.0" layoutY="171.0" prefHeight="389.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="IDCOTR" prefWidth="97.60000306367874" text="IDСотр" />
+          <TableColumn fx:id="NAMECOTR" prefWidth="140.79998779296875" text="Имя" />
+            <TableColumn fx:id="NAMEMENEGR" prefWidth="211.1999969482422" text="Менеджер Отдела" />
+            <TableColumn fx:id="ZARPLATA" minWidth="0.0" prefWidth="133.60003662109375" text="Зарплата" />
+            <TableColumn fx:id="IDPODR" prefWidth="124.00006103515625" text="Номер&#10;Подразделения" />
+            <TableColumn fx:id="NAMEPODR" prefWidth="170.4000244140625" text="Название&#10;Подразделения" />
+            <TableColumn fx:id="COUNTRY" minWidth="2.39996337890625" prefWidth="142.4000244140625" text="Город&#10;Нахождения&#10;Отдела" />
+            <TableColumn fx:id="DISCHARGE" minWidth="3.99993896484375" prefWidth="84.0" text="Разряд&#10;ЕТС&#10;" />
+        </columns>
+      </TableView>
+      <VBox layoutX="246.0" prefHeight="200.0" prefWidth="607.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="30.0" prefWidth="676.0">
+               <children>
+                  <TextField fx:id="SearchID" alignment="TOP_CENTER" prefHeight="26.0" prefWidth="302.0" promptText="Введите ID для поиска сотрудника">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <Button fx:id="SearchButton" mnemonicParsing="false" onAction="#SearchButton" text="Поиск" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="607.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#ButtonClickAllPerson" prefHeight="79.0" prefWidth="162.0" text="Вывести всех сотрудников" />
+                  <Button mnemonicParsing="false" onAction="#ClearTable" prefHeight="79.0" prefWidth="162.0" text="Очистить Таблицу" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="607.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#AddPerson" prefHeight="79.0" prefWidth="162.0" text="Добавить Сотрудника" />
+                  <Button mnemonicParsing="false" onAction="#DeletePerson" prefHeight="79.0" prefWidth="162.0" text="Удалить Сотрудника" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
